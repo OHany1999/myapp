@@ -43,9 +43,10 @@
   },
   {
    "fieldname": "bank_name",
-   "fieldtype": "Data",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Bank Name",
+   "options": "Bank Person",
    "reqd": 1
   },
   {
@@ -62,9 +63,12 @@
    "reqd": 1
   },
   {
+   "allow_on_submit": 1,
    "fieldname": "status",
    "fieldtype": "Select",
-   "label": "Status"
+   "label": "Status",
+   "options": "Draft\nUnpaid\nPartially Paid\nPaid\nCancelled\nAccrued",
+   "read_only": 1
   },
   {
    "fieldname": "amended_form",
@@ -138,7 +142,7 @@
    "fieldname": "schedule",
    "fieldtype": "Table",
    "label": "Schedule",
-   "options": "Repayment schedule"
+   "options": "bank loan schedule"
   },
   {
    "fieldname": "section_break_ryrh",
@@ -169,7 +173,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-12-26 13:31:59.478228",
+ "modified": "2024-12-26 16:14:05.266752",
  "modified_by": "Administrator",
  "module": "myApp",
  "name": "Bank Loan",
