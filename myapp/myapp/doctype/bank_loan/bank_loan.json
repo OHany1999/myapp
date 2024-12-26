@@ -19,7 +19,7 @@
   "interest",
   "column_break_icas",
   "repayment_months",
-  "monthely_repayment",
+  "monthly_repayment",
   "section_break_6nrn",
   "loan_account",
   "disbursement_account",
@@ -80,6 +80,7 @@
    "label": "Loan Amount"
   },
   {
+   "default": "0",
    "description": "percentage",
    "fieldname": "interest",
    "fieldtype": "Float",
@@ -89,11 +90,6 @@
    "fieldname": "repayment_months",
    "fieldtype": "Int",
    "label": "Repayment months"
-  },
-  {
-   "fieldname": "monthely_repayment",
-   "fieldtype": "Data",
-   "label": "Monthely repayment"
   },
   {
    "fieldname": "column_break_icas",
@@ -134,11 +130,16 @@
   {
    "fieldname": "section_break_ryrh",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "monthly_repayment",
+   "fieldtype": "Data",
+   "label": "Monthly repayment"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-26 10:04:48.488255",
+ "modified": "2024-12-26 11:08:43.166776",
  "modified_by": "Administrator",
  "module": "myApp",
  "name": "Bank Loan",
