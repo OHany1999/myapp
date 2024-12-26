@@ -20,6 +20,7 @@ class BankLoan(Document):
 		account.debit_in_account_currency = self.loan_amount
 		account.debit=self.loan_amount
 		entry.insert()
+		entry.submit()
 		
 
 	def on_update(self):
