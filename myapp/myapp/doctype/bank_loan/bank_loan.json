@@ -1,0 +1,164 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-12-26 09:12:39.227730",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_uery",
+  "naming_series",
+  "bank_name",
+  "company",
+  "column_break_zhql",
+  "posting_date",
+  "status",
+  "amended_form",
+  "section_break_o3bv",
+  "loan_amount",
+  "interest",
+  "column_break_icas",
+  "repayment_months",
+  "monthely_repayment",
+  "section_break_6nrn",
+  "loan_account",
+  "disbursement_account",
+  "column_break_m6rv",
+  "repayment_account",
+  "section_break_ryrh",
+  "schedule"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_uery",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "LOAN-.YYYY.-"
+  },
+  {
+   "fieldname": "bank_name",
+   "fieldtype": "Data",
+   "label": "Bank Name"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Data",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status"
+  },
+  {
+   "fieldname": "amended_form",
+   "fieldtype": "Link",
+   "label": "Amended Form",
+   "options": "Bank Loan"
+  },
+  {
+   "fieldname": "column_break_zhql",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_o3bv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "loan_amount",
+   "fieldtype": "Currency",
+   "label": "Loan Amount"
+  },
+  {
+   "description": "percentage",
+   "fieldname": "interest",
+   "fieldtype": "Float",
+   "label": "Interest"
+  },
+  {
+   "fieldname": "repayment_months",
+   "fieldtype": "Int",
+   "label": "Repayment months"
+  },
+  {
+   "fieldname": "monthely_repayment",
+   "fieldtype": "Data",
+   "label": "Monthely repayment"
+  },
+  {
+   "fieldname": "column_break_icas",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "loan_account",
+   "fieldtype": "Link",
+   "label": "Loan Account ",
+   "options": "Account"
+  },
+  {
+   "fieldname": "disbursement_account",
+   "fieldtype": "Link",
+   "label": "Disbursement account ",
+   "options": "Account"
+  },
+  {
+   "fieldname": "column_break_m6rv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "repayment_account",
+   "fieldtype": "Link",
+   "label": "Repayment account ",
+   "options": "Account"
+  },
+  {
+   "fieldname": "section_break_6nrn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "schedule",
+   "fieldtype": "Table",
+   "label": "Schedule",
+   "options": "Repayment schedule"
+  },
+  {
+   "fieldname": "section_break_ryrh",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-26 10:04:48.488255",
+ "modified_by": "Administrator",
+ "module": "myApp",
+ "name": "Bank Loan",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
