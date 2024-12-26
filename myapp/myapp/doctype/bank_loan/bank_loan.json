@@ -109,13 +109,15 @@
    "fieldname": "loan_account",
    "fieldtype": "Link",
    "label": "Loan Account ",
-   "options": "Account"
+   "options": "Account",
+   "reqd": 1
   },
   {
    "fieldname": "disbursement_account",
    "fieldtype": "Link",
    "label": "Disbursement account ",
-   "options": "Account"
+   "options": "Account",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_m6rv",
@@ -125,7 +127,8 @@
    "fieldname": "repayment_account",
    "fieldtype": "Link",
    "label": "Repayment account ",
-   "options": "Account"
+   "options": "Account",
+   "reqd": 1
   },
   {
    "fieldname": "section_break_6nrn",
@@ -166,7 +169,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-12-26 13:20:07.958306",
+ "modified": "2024-12-26 13:31:59.478228",
  "modified_by": "Administrator",
  "module": "myApp",
  "name": "Bank Loan",

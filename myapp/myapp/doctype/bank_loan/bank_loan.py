@@ -4,9 +4,24 @@
 import frappe
 from frappe.model.document import Document
 from frappe.utils import add_to_date
+from frappe.utils import getdate
 
 class BankLoan(Document):
-	
+
+	def on_submit(self):
+		entry = frappe.new_doc("Journal Entry")
+		entry.posting_date = getdate()
+		account = entry.append("accounts",{})
+		account.account = self.loan_account
+		account.credit_in_account_currency = self.loan_amount
+		account.credit = self.loan_amount
+		account = entry.append("accounts",{})
+		account.account = self.disbursement_account
+		account.debit_in_account_currency = self.loan_amount
+		account.debit=self.loan_amount
+		entry.insert()
+		
+
 	def on_update(self):
 		self.schedule = []
 		rep_date = self.repayment_date
