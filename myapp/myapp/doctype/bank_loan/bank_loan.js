@@ -16,8 +16,7 @@ function calculate(frm){
 if (frm.doc.loan_amount && frm.doc.repayment_months){
 			var monthly=(frm.doc.loan_amount/ frm.doc.repayment_months);
 			var monthly = monthly+monthly*frm.doc.interest/100;
-            print(monthly);
-			frm.doc.monthly_repayment=monthly;
+			frm.doc.monthly_repayment = monthly;
 			refresh_field("monthly_repayment");
 		}else{
 		frm.doc.monthly_repayment=0;
@@ -25,3 +24,4 @@ if (frm.doc.loan_amount && frm.doc.repayment_months){
 	}
 
 }
+

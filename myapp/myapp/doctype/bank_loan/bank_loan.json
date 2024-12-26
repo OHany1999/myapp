@@ -17,6 +17,7 @@
   "section_break_o3bv",
   "loan_amount",
   "interest",
+  "repayment_date",
   "column_break_icas",
   "repayment_months",
   "monthly_repayment",
@@ -26,7 +27,8 @@
   "column_break_m6rv",
   "repayment_account",
   "section_break_ryrh",
-  "schedule"
+  "schedule",
+  "amended_from"
  ],
  "fields": [
   {
@@ -42,7 +44,9 @@
   {
    "fieldname": "bank_name",
    "fieldtype": "Data",
-   "label": "Bank Name"
+   "in_list_view": 1,
+   "label": "Bank Name",
+   "reqd": 1
   },
   {
    "fieldname": "company",
@@ -52,8 +56,10 @@
   },
   {
    "fieldname": "posting_date",
-   "fieldtype": "Data",
-   "label": "Posting Date"
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
   },
   {
    "fieldname": "status",
@@ -77,7 +83,9 @@
   {
    "fieldname": "loan_amount",
    "fieldtype": "Currency",
-   "label": "Loan Amount"
+   "in_list_view": 1,
+   "label": "Loan Amount",
+   "reqd": 1
   },
   {
    "default": "0",
@@ -89,7 +97,9 @@
   {
    "fieldname": "repayment_months",
    "fieldtype": "Int",
-   "label": "Repayment months"
+   "in_list_view": 1,
+   "label": "Repayment months",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_icas",
@@ -135,11 +145,28 @@
    "fieldname": "monthly_repayment",
    "fieldtype": "Data",
    "label": "Monthly repayment"
+  },
+  {
+   "fieldname": "repayment_date",
+   "fieldtype": "Date",
+   "label": "Repayment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bank Loan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-12-26 11:08:43.166776",
+ "modified": "2024-12-26 13:20:07.958306",
  "modified_by": "Administrator",
  "module": "myApp",
  "name": "Bank Loan",
